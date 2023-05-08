@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="smQ-iH-lbE">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AdditionViewController" customModule="MomoKatsu_Kadai_07" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Px7-Es-iPi">
+                                <rect key="frame" x="146.66666666666666" y="119" width="100" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="6kT-Eq-TRO"/>
+                                    <constraint firstAttribute="height" constant="36" id="TZ3-mU-S6C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehg-ev-Ulz">
+                                <rect key="frame" x="146.66666666666666" y="185" width="100" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="DIj-S0-PnP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vNl-Tr-Mfe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mi-OJ-glc">
+                                <rect key="frame" x="136.66666666666666" y="261" width="119.99999999999997" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="R7B-ZA-JOt"/>
+                                    <constraint firstAttribute="width" constant="120" id="yD0-mP-NeE"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="計算開始">
+                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="calcStartdButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hg1-Wl-thR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="計算結果：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zo5-YD-K6z">
+                                <rect key="frame" x="140.66666666666666" y="339" width="111.66666666666666" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="13U-Em-lI7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="PYD-uX-D5k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="0Mi-OJ-glc" firstAttribute="top" secondItem="ehg-ev-Ulz" secondAttribute="bottom" constant="40" id="3lM-LR-OAa"/>
+                            <constraint firstItem="Px7-Es-iPi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="L1K-Vb-JUc"/>
+                            <constraint firstItem="Px7-Es-iPi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MDV-BQ-9gz"/>
+                            <constraint firstItem="Zo5-YD-K6z" firstAttribute="top" secondItem="0Mi-OJ-glc" secondAttribute="bottom" constant="40" id="NOY-R2-yEG"/>
+                            <constraint firstItem="0Mi-OJ-glc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zdt-uJ-ZWN"/>
+                            <constraint firstItem="Zo5-YD-K6z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dt9-vt-XNc"/>
+                            <constraint firstItem="ehg-ev-Ulz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ez5-Tg-rH5"/>
+                            <constraint firstItem="ehg-ev-Ulz" firstAttribute="top" secondItem="Px7-Es-iPi" secondAttribute="bottom" constant="30" id="wxD-FR-zHz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="UF3-gI-vcA"/>
+                    <connections>
+                        <outlet property="calcResultLabel" destination="Zo5-YD-K6z" id="r54-Vo-FYj"/>
+                        <outlet property="textField1" destination="Px7-Es-iPi" id="lIS-7z-apd"/>
+                        <outlet property="textField2" destination="ehg-ev-Ulz" id="Ehp-sc-hlV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021" y="-367"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="YGh-gd-VC7">
+            <objects>
+                <viewController id="BoN-1s-eF5" customClass="SubtractionViewController" customModule="MomoKatsu_Kadai_07" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cy8-eo-Ijx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1pO-Da-39N">
+                                <rect key="frame" x="146.66666666666666" y="119" width="100" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="hhs-u6-aFl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vgi-jD-3JL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Wn-jS-di9">
+                                <rect key="frame" x="146.66666666666666" y="185" width="100" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vne-hk-QDC"/>
+                                    <constraint firstAttribute="height" constant="36" id="wdM-o0-zzL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xt9-bU-LJI">
+                                <rect key="frame" x="136.66666666666666" y="261" width="119.99999999999997" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="34X-ew-RPM"/>
+                                    <constraint firstAttribute="width" constant="120" id="NRy-ns-PIK"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="計算開始">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="calcStartdButton:" destination="BoN-1s-eF5" eventType="touchUpInside" id="e9p-Ce-hxi"/>
+                                    <action selector="calcStartdButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zoh-Lj-Eos"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="計算結果：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNw-rj-tZR">
+                                <rect key="frame" x="140.66666666666666" y="339" width="111.66666666666666" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="p4n-C2-ypD"/>
+                                    <constraint firstAttribute="height" constant="32" id="x6f-B6-mtj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XTE-Up-e3G"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="7Wn-jS-di9" firstAttribute="top" secondItem="1pO-Da-39N" secondAttribute="bottom" constant="30" id="GV5-iG-5v4"/>
+                            <constraint firstItem="1pO-Da-39N" firstAttribute="centerX" secondItem="Cy8-eo-Ijx" secondAttribute="centerX" id="Iad-eN-ND2"/>
+                            <constraint firstItem="7Wn-jS-di9" firstAttribute="centerX" secondItem="Cy8-eo-Ijx" secondAttribute="centerX" id="Oxb-Wz-qfl"/>
+                            <constraint firstItem="wNw-rj-tZR" firstAttribute="centerX" secondItem="Cy8-eo-Ijx" secondAttribute="centerX" id="WYg-2Z-rn6"/>
+                            <constraint firstItem="1pO-Da-39N" firstAttribute="top" secondItem="XTE-Up-e3G" secondAttribute="top" constant="60" id="aBX-ic-fvh"/>
+                            <constraint firstItem="Xt9-bU-LJI" firstAttribute="top" secondItem="7Wn-jS-di9" secondAttribute="bottom" constant="40" id="vJs-sV-6B0"/>
+                            <constraint firstItem="Xt9-bU-LJI" firstAttribute="centerX" secondItem="Cy8-eo-Ijx" secondAttribute="centerX" id="wfd-hC-jgY"/>
+                            <constraint firstItem="wNw-rj-tZR" firstAttribute="top" secondItem="Xt9-bU-LJI" secondAttribute="bottom" constant="40" id="xEx-mQ-49b"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="yWn-nx-QUl"/>
+                    <connections>
+                        <outlet property="calcResultLabel" destination="wNw-rj-tZR" id="ctV-ek-yQD"/>
+                        <outlet property="textField1" destination="1pO-Da-39N" id="Wwo-1E-AF5"/>
+                        <outlet property="textField2" destination="7Wn-jS-di9" id="liy-YF-aaK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RvA-Sx-7kM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537" y="171"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ovs-tr-6RB">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="smQ-iH-lbE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TfY-Ut-DBg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="CLg-Yj-Qpp"/>
+                        <segue destination="BoN-1s-eF5" kind="relationship" relationship="viewControllers" id="8c4-kA-UKI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xl6-ka-vOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.21374045801527" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
