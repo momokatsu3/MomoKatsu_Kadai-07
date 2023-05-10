@@ -7,12 +7,6 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-}
-
 class AdditionViewController: UIViewController {
     // テキストフィールドを設定
      @IBOutlet weak var textField1: UITextField!
@@ -22,11 +16,11 @@ class AdditionViewController: UIViewController {
 
     // 計算開始ボタンのクリックにより、足し算しラベルに計算結果を表示する。
     @IBAction func calcStartdButton(_ sender: Any) {
-        view.endEditing( true )     // キーボードを隠す
+        view.endEditing(true)     // キーボードを隠す
         // テキストフィールドへ文字入力した場合、"０"とする。
         let value1 = Int(textField1.text ?? "") ?? 0
         let value2 = Int(textField2.text ?? "") ?? 0
-        calcResultLabel.text = "計算結果：" + String( value1 + value2 )
+        calcResultLabel.text = "計算結果：" + String(value1 + value2)
      }
 }
 
@@ -39,10 +33,10 @@ class SubtractionViewController: UIViewController {
 
     // 計算開始ボタンのクリックにより、引き算しラベルに計算結果を表示する。
     @IBAction func calcStartdButton(_ sender: Any) {
-        view.endEditing( true )     // キーボードを隠す
+        view.endEditing(true)     // キーボードを隠す
         // テキストフィールドへ文字入力した場合、"０"とする。
         let value1 = Int(textField1.text ?? "") ?? 0
         let value2 = Int(textField2.text ?? "") ?? 0
-        calcResultLabel.text = "計算結果：" + String( value1 - value2 )
+        calcResultLabel.text = "計算結果：" + String(value1 - value2)
      }
 }
